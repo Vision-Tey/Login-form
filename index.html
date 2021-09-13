@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheets" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: black; font-size: 40px;">Login to access the form</h2>
+
+        <form action="" name="loginfm" onsubmit="formValidation()">
+            <fieldset>
+                <legend style="font-weight: bolder; font-size: 30px;">Personal info</legend>
+                <label>First Name</label>
+                <input type="text" name="firstname"><br><br>
+                <label>Second Name</label>
+                <input type="text" name="secondname"><br><br>
+                <label>Telephone</label>
+                <input type="text" name="tele"><br><br>
+                <label>Email</label>
+                <input type="email" name="Email"><br><br>
+                <label>Age</label>
+                <input type="number" name="Age" min="18" max="32" required><br><br>
+                <label>Gender</label>
+                <select name="sex" id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend style="font-weight: bolder; font-size: 30px;">Nationality</legend>
+                <label>Select Country</label>
+                <select name="Country" id="Country">
+                    <option selected ='' value="Default">Country</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="DRC">DRC</option>
+                </select>
+            </fieldset><br>
+            <button type="submit">Login</button>
+        </form>
+        <script src="./validate.js"></script>
+    </div>
+</body>
+</html>
