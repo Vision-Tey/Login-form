@@ -8,27 +8,50 @@
     <link rel="stylesheets" href="form.css">
 </head>
 <body style="background-color: burlywood;">
-    <div class="container" style="background-color: white; margin: 0 20%;">
+    <div class="container" style="background-color: white; margin: 0 20% 0 20%;">
         <h2 style="color: black; font-size: 40px;">Login to access the form</h2>
 
-        <form action="" name="loginfm" onsubmit="formValidation()">
+        <form class="form" name="loginfm" onsubmit="formValidation()">
             <fieldset>
                 <legend style="font-weight: bolder; font-size: 30px;">Personal info</legend>
-                <label>First Name</label>
-                <input type="text" name="firstname" style="box-sizing: border-box;""><br><br>
-                <label>Second Name</label>
-                <input type="text" name="secondname"><br><br>
-                <label>Telephone</label>
-                <input type="text" name="tele"><br><br>
-                <label>Email</label>
-                <input type="email" name="Email"><br><br>
-                <label>Age</label>
-                <input type="number" name="Age" min="18" max="32" required><br><br>
-                <label>Gender</label>
+                <div class="form-control">
+                    <label>First Name</label>
+                    <input type="text" name="firstname" placeholder="Surname" style="display: block; width: 90%; padding: 10px; border-radius: 4px; border: 2px solid black;"><br><br>
+                    
+                </div>
+
+                <div class="form-control">
+                    <label>Second Name</label>
+                <input type="text" name="secondname"  style="display: block; width: 90%; padding: 10px; border-radius: 4px; border: 2px solid black;"><br><br>
+                  
+                </div>
+
+                <div class="form-control">
+                    <label>Telephone</label>
+                <input type="text" placeholder="begin with country code" name="tele"  style="display: block; width: 90%; padding: 10px; border-radius: 4px; border: 2px solid black;"><br><br>
+                   
+                </div>
+
+                <div class="form-content">
+                    <label>Email</label>
+                <input type="email" name="Email"  style="display: block; width: 90%; padding: 10px; border-radius: 4px; border: 2px solid black;"><br><br>
+                    
+                </div>
+
+                <div class="form-control">
+                    <label>Age</label>
+                <input type="number" name="Age" min="18" max="32" style="display: block; width: 90%; padding: 10px; border-radius: 4px; border: 2px solid black;"><br><br>
+  
+                </div>
+
+                <div class="form-control">
+                    <label>Gender</label>
                 <select name="sex" id="sex">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
+                </div>
+
             </fieldset>
             <fieldset>
                 <legend style="font-weight: bolder; font-size: 30px;">Nationality</legend>

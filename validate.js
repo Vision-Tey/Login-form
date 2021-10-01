@@ -64,7 +64,7 @@ function allEmail(mail){
     if (mail.value.match(Emails)){
         return true;
     }else {
-        alert('Wrong email');
+        alert('Wrong email format');
         return false;
     }
 }
